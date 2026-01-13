@@ -1,0 +1,28 @@
+Python version required: Python 3.10 or above
+
+Create virtual environment:
+python -m venv my_env1
+
+Activate virtual environment (Windows):
+my_env1\Scripts\activate
+
+Upgrade pip:
+python -m pip install --upgrade pip
+
+Install required libraries (order wise):
+pip install pandas
+pip install pymysql
+pip install sqlalchemy
+
+(Optional – recommended for production):
+pip install python-dotenv
+
+Python imports used in the project:
+import pandas as pd
+import pymysql
+from sqlalchemy import create_engine
+from urllib.parse import quote_plus
+
+Database used: MySQL (port 3306)
+
+MySQL driver used: pymysql
